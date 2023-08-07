@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    /* top-right buttom-left */
+    border-radius: 10px;
+    background-color: #F9F5F6;
+    box-shadow: 0 10px 10px 10px hsl(0, 0%, 0%, 0.1);
+    /* horizontal-vertical-blur-radius */
+}
+
+h1 {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.quote-author {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.twitter-button {
+    margin-right: 5px;
+}
+
+.new-quote-btn {
+    margin-left: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.0rem;
+    height: 2.0rem;
+    width: 8rem;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #CD6688;
+    outline: none;
+    box-shadow: 0 0.2rem rgba(121, 121, 121, 0.2);
+    font-family: 'Gochi Hand', cursive;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(225, 225, 225, 0.65);
+}
+
+/*Media Query */
+@media (max-width: 768px) {
+    .quote-container {
+        margin: auto 20px;
+    }
+}
